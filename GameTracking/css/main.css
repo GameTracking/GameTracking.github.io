@@ -1,0 +1,375 @@
+/*Import fonte*/
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+
+*{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+    background: #414C59!important;
+}
+
+
+
+/*MENU*/
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background: #2C353F;
+    overflow: hidden;
+}
+
+.logo-gt{
+    width: 70px;
+}
+
+.links-nav{
+    display: flex!important;
+    list-style: none;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.links-nav a{
+    color: #fff;
+    font-weight: 600!important;
+    padding: 20px;
+}
+
+.links-nav a.active{
+    background: #E5E9F2;
+    padding: 20px;
+    color: #000;
+}
+
+#sugestoes{
+    margin-right: 60px ;
+}
+
+
+
+/* Jogos gratis e barra de pesquisa */
+
+.jogo h1{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.jogo{
+    background: #5A6978;
+    margin: 30px auto;
+    max-width: 950px;
+    display: flex;
+    padding: 8px;
+    flex-wrap: wrap;
+    color: #FFF;
+    border-radius: 15px;
+}
+
+.jogo img{
+    width: 270px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vermais{
+    margin: 10px;
+    background: #47525E;
+    color: #Fff;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    width: 150px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* Barra pesquisa */
+
+.pesquisa{
+    position: relative;
+    max-width: 600px!important;
+}
+
+.barra-pesq{
+    max-width: 600px;
+    margin: 30px auto;
+    border-radius: 15px!important;
+    font-weight: 600!important;
+    outline: none!important;
+    position: relative;
+    text-indent: 20px;
+}
+
+.pesquisa i{
+    position: absolute;
+    z-index: 9999;
+    top: 10px;
+    left: 23px;
+    color: #6c757d;
+    font-size: 20px;
+    pointer-events:none;
+}
+
+
+
+/* Sugestoes */
+
+.form{
+    padding: 20px;
+    color:#FFF;
+    background-color:#5A6978;
+    margin: 50px auto;
+    max-width: 500px!important;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.form label{
+    display: block;
+    margin-top:15px;
+}
+.form input{
+    border-radius: 5px;
+    border: solid 1px #414C59;
+    text-align: center;
+    padding: 4px;
+}
+.form #enviar,
+.form #cadastrar,
+.form #logar{
+    margin-top: 25px;
+    border-radius: 5px;
+    border: 1px solid #414C59;
+    background-color: #414C59;
+    color: #fff;
+    padding: 5px 15px;
+    padding: 10px;
+    width: 170px;
+}
+.form textarea{
+    resize: none;
+    width: 80%;
+    height: 150px;
+}
+
+
+
+/* Criar conta */
+
+.possui-conta{
+    margin: 20px 0;
+}
+
+.possui-conta h3{
+    font-weight: 300;
+}
+
+.possui-conta a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.possui-conta a:hover{
+    color: #fff;
+}
+
+
+
+/* Sobre */
+
+.sobre{
+    max-width: 900px!important;
+    padding: 20px!important;
+}
+
+.quem-somos{
+    padding: 20px!important;
+    font-size: 40px;
+}
+
+.sobre img{
+    max-width: 90%;
+    border-radius: 15px;
+}
+
+.texto-quem-somos{
+    font-weight: 500!important;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/*Quando clicar em ver mais*/
+
+.informacoes{
+    display: flex;
+}
+
+.img-jogo img{
+    width: 300px;
+    max-width: 100%;
+}
+
+.infos{
+    padding: 10px;
+}
+
+.links-jogos{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.links-jogos a:hover{
+    color: #fff;
+}
+
+.texto-jogo p{
+    font-size: 25px;
+    text-align: left;
+    font-weight: 200;
+    padding: 20px;
+}
+
+
+/*slider*/
+.carousel-item img{
+    width: 500px!important;
+    margin: 0 auto;
+}
+
+
+/*footer*/
+
+.footer-gt{
+    background: #47525E;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-img{
+    width: 150px;
+}
+
+.logo-footer,
+.mapa,
+.social{
+    padding: 10px;
+}
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa h4{
+    color: #fff;
+}
+
+.mapa .link-mapa{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.social i{
+    color: #fff;
+    font-size: 50px;
+    margin: 2px;
+}
+
+
+
+/* Perfil */
+
+.div-perfil{
+    padding: 20px;
+    color:#FFF;
+    background-color:#5A6978;
+    margin: 50px auto;
+    max-width: 650px!important;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+#img-perfil{
+    margin: 10px;
+    border-radius: 50%;
+    width: 150px;
+    filter: brightness(0) invert(1) ;
+}
+
+.div-perfil table{
+    margin: 20px auto;
+    width: 95%
+
+}
+
+.div-perfil table th{
+    width: 33%;
+    text-align: right;
+    padding: 5px 0;
+}
+
+.div-perfil table #td-info{
+    text-align: center;
+    padding: 5px 0;
+}
+
+.div-perfil table #td-img{
+    width: 33%;
+    padding: 5px 0;
+}
+
+.div-perfil table img{
+    width: 20px;
+    filter: invert();
+    text-align: left;
+}
+
+
+
+/*medias queries*/
+
+@media(max-width: 768px){
+    .form,
+    .div-perfil,
+    .sobre{
+        max-width: 90%!important;
+    }
+    .footer-gt{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .informacoes{
+        flex-wrap: wrap;
+    }
+    .links-jogos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
