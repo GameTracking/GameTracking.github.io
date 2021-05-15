@@ -10,9 +10,10 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
       <link rel="stylesheet" href="main.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-      <script src="js/app.js">
+      <script src="js/app.js"></script>
 
-      </script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 
       <title>Game Tracking</title>
    </head>
@@ -48,19 +49,36 @@
       </header>
 
       <!--Fim do navbar-->
-
-      <div class="container mb-3 pesquisa">
-         <i class="fas fa-search"></i>
-         <input type="email" class="form-control barra-pesq" placeholder="Buscar jogos">
-      </div>
+      <div class="input-group my-3 pesquisa container">
+         <input id="busca" type="text" class="form-control" placeholder="Buscar">
+         <button class="btn" type="button" id="btn-busca"><i class="fas fa-search"></i></button>
+       </div>
 
       <div class="container">
+         
+         <div class="alert alert-danger alerta-erro" role="alert">
+            <span>Nenhum resultado encontrado</span>
+          </div>
 
          <div class="jogo">
-            <img src="https://mundodrix.com.br/site/wp-content/uploads/2020/07/Rocket-League.jpg" alt="" class="imgjogo">
+            <img class="gratis-promocao" src="imgs/gratis.png">
+            <img class="img-jogo-home" src="https://mundodrix.com.br/site/wp-content/uploads/2020/07/Rocket-League.jpg" alt="" class="imgjogo">
             <div class="infos">
-               <h2>Rocket League grátis</h2>
-               <h3>Rocket league ficou de graça no dia 23 de setembro</h3>
+                  <h2 class="nome-jogo">Rocket League</h2>
+                  <h3>Rocket league ficou de graça no dia 23 de setembro...</h3>
+            <div class="data">
+               <p>12/11/20</p>
+               <a href="jogo.html" class="vermais">Ver mais</a>
+            </div>
+            </div>
+         </div>
+
+         <div class="jogo">
+            <img class="gratis-promocao" src="imgs/gratis.png">
+            <img class="img-jogo-home" src="https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-featured-image-16x9.jpg.adapt.crop191x100.1200w.jpg" alt="" class="img-jogo">
+            <div class="infos">
+               <h2 class="nome-jogo">Apex Legends</h2>
+               <h3>Apex Legends está disponível de graça para PlayStation®4, PlayStation®5...</h3>
                <div class="data">
                   <p>12/11/20</p>
                   <a href="jogo.html" class="vermais">Ver mais</a>
@@ -69,10 +87,11 @@
          </div>
 
          <div class="jogo">
-            <img src="https://mundodrix.com.br/site/wp-content/uploads/2020/07/Rocket-League.jpg" alt="" class="img-jogo">
+            <img class="gratis-promocao" src="imgs/gratis.png">
+            <img class="img-jogo-home" src="https://cdn2.unrealengine.com/egs-thelionssong-mipumigames-g1a-02-1920x1080-a71da112b7a6.jpg" alt="" class="img-jogo">
             <div class="infos">
-               <h2>Rocket League grátis</h2>
-               <h3>Rocket league ficou de graça no dia 23 de setembro</h3>
+               <h2>The Lion's Song</h2>
+               <h3>A promoção termina 20/05/2021 às 12:00...</h3>
                <div class="data">
                   <p>12/11/20</p>
                   <a href="jogo.html" class="vermais">Ver mais</a>
@@ -81,16 +100,31 @@
          </div>
 
          <div class="jogo">
-            <img src="https://mundodrix.com.br/site/wp-content/uploads/2020/07/Rocket-League.jpg" alt="" class="img-jogo">
+            <img class="gratis-promocao" src="imgs/promocao.png">
+            <img class="img-jogo-home" src="https://cdn-ext.fanatical.com/production/product/1280x720/821a8ef2-ae44-43ee-ba5f-893f0c408034.jpeg" alt="" class="img-jogo">
             <div class="infos">
-               <h2>Rocket League grátis</h2>
-               <h3>Rocket league ficou de graça no dia 23 de setembro</h3>
+               <h2>Shadow of War - Definitive Edition</h2>
+               <h3>80% de desconto na Versão Definitiva de Shadow of War, contendo...</h3>
                <div class="data">
                   <p>12/11/20</p>
                   <a href="jogo.html" class="vermais">Ver mais</a>
                </div>
             </div>
          </div>
+
+         <div class="jogo">
+            <img class="gratis-promocao" src="imgs/promocao.png">
+            <img class="img-jogo-home" src="https://assets.nuuvem.com/image/upload/t_banner_big/v1/products/557dbb4d69702d0a9cab8700/banners/rd166ojwrkegtxi8vkx8.jpg" alt="" class="img-jogo">
+            <div class="infos">
+               <h2>Euro Truck Simulator 2</h2>
+               <h3>75% de desconto no jogo base Euro Truck Simulator 2. Um jogo de...</h3>
+               <div class="data">
+                  <p>12/11/20</p>
+                  <a href="jogo.html" class="vermais">Ver mais</a>
+               </div>
+            </div>
+         </div>
+
 
       </div>
 
@@ -106,9 +140,9 @@
          <div class="mapa">
             <h4>Mapa do site</h4>
 
-            <a href="" class="link-mapa">Home</a>
-            <a href="" class="link-mapa">Sobre nós</a>
-            <a href="" class="link-mapa">Sugestões</a>
+            <a href="index.html" class="link-mapa">Home</a>
+            <a href="sobre.html" class="link-mapa">Sobre nós</a>
+            <a href="sugestoes.html" class="link-mapa">Sugestões</a>
          </div>
 
 

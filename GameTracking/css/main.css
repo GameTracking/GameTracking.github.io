@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap');
 
+/* MENU */
 *{
     font-family: 'Titillium Web', sans-serif;
 }
@@ -10,7 +11,16 @@ body{
     background: #414C59!important;
 }
 
+a:hover{
+    color: #7d9efc !important;
+}
 
+.input-button:hover{
+    color: #7d9efc !important;
+}
+button{
+    font-weight: 700 !important;
+}
 
 /*MENU*/
 
@@ -50,9 +60,13 @@ body{
     margin-right: 60px ;
 }
 
-
-
 /* Jogos gratis e barra de pesquisa */
+
+.gratis-promocao{
+    z-index: 999;
+    position: absolute;
+    width: 150px;
+}
 
 .jogo h1{
     color: #fff;
@@ -61,18 +75,26 @@ body{
     margin-top: 30px;
 }
 
+.jogo h3{
+    color: #fff;
+    font-size: 15px;
+    text-align: left;
+    text-indent: 10px;
+    margin-top: 20px;
+   
+}
+
 .jogo{
     background: #5A6978;
     margin: 30px auto;
     max-width: 950px;
     display: flex;
-    padding: 8px;
     flex-wrap: wrap;
     color: #FFF;
     border-radius: 15px;
 }
 
-.jogo img{
+.img-jogo-home{
     width: 270px;
     padding: 10px;
     border-radius: 15px;
@@ -81,11 +103,10 @@ body{
 .data{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .vermais{
-    margin: 10px;
+    margin-top: 10px;
     background: #47525E;
     color: #Fff;
     border-radius: 5px;
@@ -95,42 +116,40 @@ body{
     font-weight: 600;
     text-decoration: none;
     text-align: center;
+    margin-right: 10px;
+    
 }
 
 
 /* Barra pesquisa */
+#btn-busca{
+    background-color: rgb(44, 53, 63);
+    border: 1px solid #7d9efc;
+}
+
+#btn-busca:hover{
+    background-color: rgb(77, 85, 95)
+}
 
 .pesquisa{
     position: relative;
     max-width: 600px!important;
 }
 
-.barra-pesq{
-    max-width: 600px;
-    margin: 30px auto;
-    border-radius: 15px!important;
-    font-weight: 600!important;
-    outline: none!important;
-    position: relative;
-    text-indent: 20px;
+.pesquisa input{
+    border: 1px solid #7d9efc;
 }
 
 .pesquisa i{
-    position: absolute;
-    z-index: 9999;
-    top: 10px;
-    left: 23px;
-    color: #6c757d;
-    font-size: 20px;
+    color: #7d9efc;
     pointer-events:none;
 }
 
-
-
 /* Sugestoes */
 
+
 .form{
-    padding: 20px;
+    padding: 10px;
     color:#FFF;
     background-color:#5A6978;
     margin: 50px auto;
@@ -167,9 +186,16 @@ body{
     height: 150px;
 }
 
-
-
 /* Criar conta */
+.div-logar{
+    padding-bottom: 10%;
+    padding-top: 1%;
+}
+
+.logar-cadastrar{
+    color: #7d9efc !important;
+    font-weight: 600 !important;
+}
 
 .possui-conta{
     margin: 20px 0;
@@ -222,11 +248,20 @@ body{
 
 .img-jogo img{
     width: 300px;
-    max-width: 100%;
 }
 
 .infos{
     padding: 10px;
+    height: max-content;
+    width: 650px;
+}
+
+.infos h3{
+    margin-left: -9px;
+}
+
+#infoButtons{
+    border: 1px solid green;
 }
 
 .links-jogos{
@@ -351,6 +386,14 @@ body{
 
 
 
+/*Alerta de erro*/
+.alerta-erro{
+    display: none;
+}
+
+.alerta-erro.mostra{
+    display: block;
+}
 /*medias queries*/
 
 @media(max-width: 768px){
