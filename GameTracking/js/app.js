@@ -29,16 +29,29 @@ window.addEventListener("load",()=>{
 
     //botao de busca
     var btnBusca = document.querySelector('#btn-busca');
-
-    btnBusca.addEventListener('click',()=>{
-        buscar();
-    })
+    if (btnBusca){
+        btnBusca.addEventListener('click',()=>{
+            buscar();
+        })
+    }
+    
 
     //barra de busca
     var barraBusca = document.querySelector('#busca');
-    barraBusca.addEventListener('keyup',()=>{
-        buscar();
+    if(barraBusca){
+        barraBusca.addEventListener('keyup',()=>{
+            buscar();
+        })
+    }
+  
+
+    //Sair
+    var btnSair = document.querySelector('#sair');
+    btnSair.addEventListener('click',(x)=>{
+        x.preventDefault();
+        sair();
     })
+
 });
 
 function EnviarSugestao(){
@@ -174,7 +187,25 @@ function buscar(){
     })
 }
 
-
-
-
-
+function sair(){
+    Swal.fire({
+        title: 'Não nos abandone :(',
+        text: "Tem certeza que deseja sair?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#3085d6',
+        confirmButtonText: 'Sim'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            'Deslogado!',
+            'Deslogado com sucesso!',
+            'success'
+          )
+          setTimeout(()=>{
+            window.location.href = "index.html";
+        },2000)
+        }
+      })
+}

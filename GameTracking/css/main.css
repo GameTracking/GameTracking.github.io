@@ -170,7 +170,8 @@ button{
 }
 .form #enviar,
 .form #cadastrar,
-.form #logar{
+.form #logar,
+#sair{
     margin-top: 25px;
     border-radius: 5px;
     border: 1px solid #414C59;
@@ -246,8 +247,13 @@ button{
     display: flex;
 }
 
+.titulo-pag-jogo{
+    text-align: left;
+    margin-left: 30px;
+}
+
 .img-jogo img{
-    width: 300px;
+    width: 550px;
 }
 
 .infos{
@@ -266,7 +272,7 @@ button{
 
 .links-jogos{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 30px;
 }
 
@@ -348,6 +354,20 @@ button{
     text-align: center;
 }
 
+.opcoes-perfil{
+    width: 70%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.opcoes-perfil input{
+    background-color: #e0e8ff;
+    border: #2C353F 1px solid!important;
+}
+
+.opcoes-perfil #div-sair{
+    text-align: center;
+}
 
 #img-perfil{
     margin: 10px;
@@ -359,7 +379,6 @@ button{
 .div-perfil table{
     margin: 20px auto;
     width: 95%
-
 }
 
 .div-perfil table th{
@@ -384,7 +403,9 @@ button{
     text-align: left;
 }
 
-
+.footer-perfil{
+    margin-top: 190px!important;
+}
 
 /*Alerta de erro*/
 .alerta-erro{
