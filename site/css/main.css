@@ -1,0 +1,511 @@
+/*Import fonte*/
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+
+/* MENU */
+*{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+    background: #414C59!important;
+}
+
+a:hover{
+    color: #7d9efc !important;
+}
+
+.input-button:hover{
+    color: #7d9efc !important;
+}
+button{
+    font-weight: 700 !important;
+}
+
+/*Resolver footer subindo*/
+.fix-footer{
+    min-height: 80vh!important;
+}
+
+/*MENU*/
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background: #2C353F;
+    overflow: hidden;
+}
+
+/*Quando ele logar*/
+
+.menu.logado{
+    justify-content: space-around;
+}
+
+.menu.logado a.link-logar,
+.menu.logado a.link-cadastro{
+    display: none;
+}
+
+.menu.logado div.nav-perfil{
+    display: block;
+}
+
+.nav-perfil{
+    margin: 0px 15px;
+    display: none;
+    align-items: center;
+}
+
+.items-perfil{
+    display: flex;
+    align-items: center;
+}
+
+.nav-perfil a{
+    color: #Fff;
+    text-decoration: none;
+}
+
+.nav-perfil img{
+    width: 50px;
+    margin: 10px;
+    filter: brightness(0) invert(1);
+}
+
+
+.logo-gt{
+    width: 70px;
+}
+
+.links-nav{
+    display: flex!important;
+    list-style: none;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.links-nav a{
+    color: #fff;
+    font-weight: 600!important;
+    padding: 20px;
+}
+
+.links-nav a.active{
+    background: #E5E9F2;
+    padding: 23px;
+    color: #000;
+}
+
+/* Jogos gratis e barra de pesquisa */
+
+.gratis-promocao{
+    z-index: 999;
+    position: absolute;
+    width: 150px;
+}
+
+.jogo h1{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.jogo h3{
+    color: #fff;
+    font-size: 15px;
+    text-align: left;
+    text-indent: 10px;
+    margin-top: 20px;
+   
+}
+
+.jogo{
+    background: #5A6978;
+    margin: 30px auto;
+    max-width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #FFF;
+    border-radius: 15px;
+}
+
+.img-jogo-home{
+    width: 270px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vermais{
+    margin-top: 10px;
+    background: #47525E;
+    color: #Fff;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    width: 150px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 10px;
+    
+}
+
+
+/* Barra pesquisa */
+#btn-busca{
+    background-color: rgb(44, 53, 63);
+    border: 1px solid #7d9efc;
+}
+
+#btn-busca:hover{
+    background-color: rgb(77, 85, 95)
+}
+
+.pesquisa{
+    position: relative;
+    max-width: 600px!important;
+}
+
+.pesquisa input{
+    border: 1px solid #7d9efc;
+}
+
+.pesquisa i{
+    color: #7d9efc;
+    pointer-events:none;
+}
+
+/* Sugestoes */
+
+
+.form{
+    padding: 10px;
+    color:#FFF;
+    background-color:#5A6978;
+    margin: 50px auto;
+    max-width: 500px!important;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.form label{
+    display: block;
+    margin-top:15px;
+}
+.form input{
+    border-radius: 5px;
+    border: solid 1px #414C59;
+    text-align: center;
+    padding: 4px;
+}
+.form #enviar,
+.form #cadastrar,
+.form #logar,
+#sair{
+    margin-top: 25px;
+    border-radius: 5px;
+    border: 1px solid #414C59;
+    background-color: #414C59;
+    color: #fff;
+    padding: 5px 15px;
+    padding: 10px;
+    width: 170px;
+}
+.form textarea{
+    resize: none;
+    width: 80%;
+    height: 150px;
+}
+
+/* Criar conta */
+.div-logar{
+    padding-bottom: 10%;
+    padding-top: 1%;
+}
+
+.logar-cadastrar{
+    color: #7d9efc !important;
+    font-weight: 600 !important;
+}
+
+.possui-conta{
+    margin: 20px 0;
+}
+
+.possui-conta h3{
+    font-weight: 300;
+}
+
+.possui-conta a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.possui-conta a:hover{
+    color: #fff;
+}
+
+
+
+/* Sobre */
+
+.sobre{
+    max-width: 900px!important;
+    padding: 20px!important;
+}
+
+.quem-somos{
+    padding: 20px!important;
+    font-size: 40px;
+}
+
+.sobre img{
+    max-width: 90%;
+    border-radius: 15px;
+}
+
+.texto-quem-somos{
+    font-weight: 500!important;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/*Quando clicar em ver mais*/
+
+.informacoes{
+    display: flex;
+}
+
+.titulo-pag-jogo{
+    text-align: left;
+    margin-left: 30px;
+}
+
+.img-jogo img{
+    width: 550px;
+}
+
+.infos{
+    padding: 10px;
+    height: max-content;
+    width: 650px;
+}
+
+.infos h3{
+    margin-left: -9px;
+}
+
+#infoButtons{
+    border: 1px solid green;
+}
+
+.links-jogos{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.links-jogos a:hover{
+    color: #fff;
+}
+
+.texto-jogo p{
+    font-size: 25px;
+    text-align: left;
+    font-weight: 200;
+    padding: 20px;
+}
+
+
+/*slider*/
+.carousel-item img{
+    width: 500px!important;
+    margin: 0 auto;
+}
+
+
+/*footer*/
+
+.footer-gt{
+    background: #47525E;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-img{
+    width: 150px;
+}
+
+.logo-footer,
+.mapa,
+.social{
+    padding: 10px;
+}
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa h4{
+    color: #fff;
+}
+
+.mapa .link-mapa{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.social i{
+    color: #fff;
+    font-size: 50px;
+    margin: 2px;
+}
+
+
+
+/* Perfil */
+
+.div-perfil{
+    padding: 20px;
+    color:#FFF;
+    background-color:#5A6978;
+    margin: 50px auto;
+    max-width: 650px!important;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.btn-edit{
+    background-color: #beb3a6;
+}
+
+.btn-confirm{
+    border-radius: 5px;
+    border: 1px solid #303741;
+    background-color: #414C59;
+    color: #fff;
+    padding:2px 5px;
+}
+
+.btn-confirm:hover{
+    background-color: #7d9efc;
+}
+
+.div-perfil table .td-info input{
+    border-radius: 5px;
+    border: 1px solid #303741;
+    margin: auto;
+}
+
+.opcoes-perfil{
+    width: 70%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.opcoes-perfil input{
+    background-color: #e0e8ff;
+    border: #2C353F 1px solid!important;
+    cursor: pointer;
+}
+
+.opcoes-perfil #div-sair{
+    text-align: center;
+}
+
+#img-perfil{
+    margin: 10px;
+    border-radius: 50%;
+    width: 150px;
+    filter: brightness(0) invert(1) ;
+}
+
+.div-perfil table{
+    margin: 20px auto;
+    max-width: 95%;
+}
+
+.div-perfil table th{
+    width: 30%;
+    text-align: right;
+    padding: 5px 0;
+}
+
+.div-perfil table .td-info{
+    text-align: center;
+    padding: 5px 0;
+    width:60%;
+}
+
+.div-perfil table .td-img{
+    padding: 5px 0;
+    min-width: 120px;
+    text-align: left;
+}
+
+.div-perfil table .td-img img:hover{
+    cursor: pointer;
+    background-color: rgb(146, 119, 52);
+}
+
+.div-perfil table img{
+    width: 30px;
+    filter: invert();
+    text-align: left;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.footer-perfil{
+    margin-top: 190px!important;
+}
+
+/*Alerta de erro*/
+.alerta-erro{
+    display: none;
+}
+
+.alerta-erro.mostra{
+    display: block;
+}
+/*medias queries*/
+
+@media(max-width: 768px){
+    .form,
+    .div-perfil,
+    .sobre{
+        max-width: 90%!important;
+    }
+    .footer-gt{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .informacoes{
+        flex-wrap: wrap;
+    }
+    .links-jogos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
