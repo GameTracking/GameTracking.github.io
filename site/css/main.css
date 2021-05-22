@@ -421,6 +421,12 @@ button{
     margin: auto;
 }
 
+.div-perfil table .td-info select{
+    border-radius: 5px;
+    border: 1px solid #303741;
+    margin: auto;
+}
+
 .opcoes-perfil{
     width: 70%;
     margin: 20px auto;
