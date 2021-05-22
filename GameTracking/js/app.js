@@ -1,5 +1,10 @@
 
 window.addEventListener("load",()=>{
+
+
+    //variabel login
+    var logado = '';
+
     //Enviar Sugestão
     var btnEnviar = document.querySelector('#enviar');
     if (btnEnviar){
@@ -24,8 +29,18 @@ window.addEventListener("load",()=>{
         btnLogar.addEventListener("click",(x)=>{
             x.preventDefault();
             Logar();
+            logado = 'logado';
+            localStorage.setItem('logado',logado);
         })
     }
+
+        //Teste
+        var h2 = document.querySelector('.h2-perfil');
+        if(h2){
+            h2.addEventListener('click',()=>{
+                console.log(localStorage.getItem('logado'));
+            })
+        }
 
     //botao de busca
     var btnBusca = document.querySelector('#btn-busca');
@@ -47,12 +62,40 @@ window.addEventListener("load",()=>{
 
     //Sair
     var btnSair = document.querySelector('#sair');
-    btnSair.addEventListener('click',(x)=>{
-        x.preventDefault();
-        sair();
-    })
+    if(btnSair){
+        btnSair.addEventListener('click',(x)=>{
+            x.preventDefault();
+            sair();
+        })
+    }
+
 
 });
+
+
+function verificaLogin(){
+
+    var menu = document.querySelector('.menu');
+
+    var estado = localStorage.getItem('logado');
+
+    if(estado == 'logado'){
+        menu.classList.add('logado');
+        if(menu.classList.contains('deslogado')){
+            menu.classList.remove('deslogado');
+        }
+    }else{
+        menu.classList.add('deslogado');
+        if(menu.classList.contains('logado')){
+            menu.classList.remove('logado');
+        }
+    }
+
+    
+}
+
+
+verificaLogin();
 
 function EnviarSugestao(){
     var nome = document.querySelector("#nome").value;
@@ -116,6 +159,7 @@ function Cadastrar(){
 }
 
 function Logar(){
+
     var email = document.querySelector("#email").value;
     var senha = document.querySelector("#senha").value;
     
@@ -150,6 +194,9 @@ function storage(){
     }
     
 }
+
+
+
 
 window.onload = storage();
 
@@ -194,6 +241,7 @@ function sair(){
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#d33',
+        cancelButtonText: 'Cancelar',
         cancelButtonColor: '#3085d6',
         confirmButtonText: 'Sim'
       }).then((result) => {
@@ -203,6 +251,8 @@ function sair(){
             'Deslogado com sucesso!',
             'success'
           )
+          logado = 'deslogado';
+          localStorage.setItem('logado',logado);
           setTimeout(()=>{
             window.location.href = "index.html";
         },2000)

@@ -22,6 +22,11 @@ button{
     font-weight: 700 !important;
 }
 
+/*Resolver footer subindo*/
+.fix-footer{
+    min-height: 80vh!important;
+}
+
 /*MENU*/
 
 .menu{
@@ -32,6 +37,44 @@ button{
     background: #2C353F;
     overflow: hidden;
 }
+
+/*Quando ele logar*/
+
+.menu.logado{
+    justify-content: space-around;
+}
+
+.menu.logado a.link-logar,
+.menu.logado a.link-cadastro{
+    display: none;
+}
+
+.menu.logado div.nav-perfil{
+    display: block;
+}
+
+.nav-perfil{
+    margin: 0px 15px;
+    display: none;
+    align-items: center;
+}
+
+.items-perfil{
+    display: flex;
+    align-items: center;
+}
+
+.nav-perfil a{
+    color: #Fff;
+    text-decoration: none;
+}
+
+.nav-perfil img{
+    width: 50px;
+    margin: 10px;
+    filter: brightness(0) invert(1);
+}
+
 
 .logo-gt{
     width: 70px;
@@ -52,12 +95,8 @@ button{
 
 .links-nav a.active{
     background: #E5E9F2;
-    padding: 20px;
+    padding: 23px;
     color: #000;
-}
-
-#sugestoes{
-    margin-right: 60px ;
 }
 
 /* Jogos gratis e barra de pesquisa */
@@ -354,6 +393,28 @@ button{
     text-align: center;
 }
 
+.btn-edit{
+    background-color: #beb3a6;
+}
+
+.btn-confirm{
+    border-radius: 5px;
+    border: 1px solid #303741;
+    background-color: #414C59;
+    color: #fff;
+    padding:2px 5px;
+}
+
+.btn-confirm:hover{
+    background-color: #7d9efc;
+}
+
+.div-perfil table .td-info input{
+    border-radius: 5px;
+    border: 1px solid #303741;
+    margin: auto;
+}
+
 .opcoes-perfil{
     width: 70%;
     margin: 20px auto;
@@ -363,6 +424,7 @@ button{
 .opcoes-perfil input{
     background-color: #e0e8ff;
     border: #2C353F 1px solid!important;
+    cursor: pointer;
 }
 
 .opcoes-perfil #div-sair{
@@ -378,29 +440,39 @@ button{
 
 .div-perfil table{
     margin: 20px auto;
-    width: 95%
+    max-width: 95%;
 }
 
 .div-perfil table th{
-    width: 33%;
+    width: 30%;
     text-align: right;
     padding: 5px 0;
 }
 
-.div-perfil table #td-info{
+.div-perfil table .td-info{
     text-align: center;
     padding: 5px 0;
+    width:60%;
 }
 
-.div-perfil table #td-img{
-    width: 33%;
+.div-perfil table .td-img{
     padding: 5px 0;
+    min-width: 120px;
+    text-align: left;
+}
+
+.div-perfil table .td-img img:hover{
+    cursor: pointer;
+    background-color: rgb(146, 119, 52);
 }
 
 .div-perfil table img{
-    width: 20px;
+    width: 30px;
     filter: invert();
     text-align: left;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 5px;
 }
 
 .footer-perfil{

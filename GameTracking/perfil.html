@@ -9,6 +9,7 @@
       <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
       <link rel="stylesheet" href="main.css">
+    
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
       
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -21,10 +22,11 @@
       <header>
          <nav class="menu">
             <div class="logo">
-               <a href="">
+               <a href="index.html">
                <img class="logo-gt" src="imgs/logo.png" alt="">
                </a>
             </div>
+            
             <div class="links">
                <ul class="links-nav">
                   <li class="home-sobre-sugestoes">
@@ -40,6 +42,19 @@
                   </li>
                </ul>
             </div>
+
+           
+            <div class="nav-perfil">
+
+               <div class="items-perfil">
+                  <a href="perfil.html">
+                     <img src="imgs/user.png" alt="img-usuario">
+                  </a>
+                  <a href="perfil.html">Meu perfil</a>
+               </div>
+               
+            </div>
+
          </nav>
       </header>
 
@@ -47,24 +62,33 @@
       <!--Fim do navbar-->
 
     <div class="div-perfil container">
-        <h2>Perfil</h2>
+        <h2 class="h2-perfil">Perfil</h2>
         <img id="img-perfil" src=imgs/user.png alt="Imagem do Perfil">
         <h3 class="nome-usuario" >Seu Nome</h3>
         <table>
             <tr>
-                <th>Email:</th>
-                <td id="td-info">seuemail@email.com</td>
-                <td id="td-img"><img src="imgs/lapis.com.png" alt="Editar"></td>
+               <th>Email:</th>
+               <td class="td-info"><span class="span-email">seuemail@email.com</span><input class="input-email" type="email" placeholder="Insira seu email"></td>
+               <td class="td-img"><img class="btn-edit-email btn-edit" src="imgs/lapis.com.png" alt="Editar e-mail">
+                  <button class="confirm-email btn-confirm">Confirmar</button>
+               </td>
             </tr>
             <tr>
                 <th>Gênero:</th>
-                <td id="td-info">Masculino</td>
-                <td id="td-img"><img src="imgs/lapis.com.png" alt="Editar"></td>
+                <td class="td-info"><span class="span-genero">Masculino</span><select class="input-genero">
+                   <option value="Masculino">Masculino</option>
+                   <option value="Feminino">Feminino</option>
+                </select></td>
+                  <td class="td-img"><img class="btn-edit-genero btn-edit" src="imgs/lapis.com.png" alt="Editar gênero">
+                     <button class="confirm-genero btn-confirm">Confirmar</button>
+                  </td>
             </tr>
             <tr>
                 <th>Data de Nascimento:</th>
-                <td id="td-info">05/08/1999</td>
-                <td id="td-img"><img src="imgs/lapis.com.png" alt="Editar"></td>
+                <td class="td-info"><span class="span-nascimento">05/08/1999</span><input class="input-nascimento" type="date"></td>
+                <td class="td-img"><img class="btn-edit-nascimento btn-edit" src="imgs/lapis.com.png" alt="Editar data de nascimento">
+                  <button class="confirm-nascimento btn-confirm">Confirmar</button>
+               </td>
             </tr>
         </table>
         <div class="opcoes-perfil">
@@ -105,6 +129,7 @@
 
       <!-- Scripts -->
       <script src="js/app.js"></script>
+      <script src="js/perfil.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
    </body>
 </html>
