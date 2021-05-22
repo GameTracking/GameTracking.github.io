@@ -152,8 +152,8 @@ function Cadastrar(){
             'success'
           )
 
-          logado = 'logado';
-          localStorage.setItem('logado',logado);
+        logado = 'logado';
+        localStorage.setItem('logado',logado);
 
         setTimeout(()=>{
             window.location.href = "perfil.html";
