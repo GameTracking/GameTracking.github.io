@@ -44,6 +44,12 @@ button{
     justify-content: space-around;
 }
 
+.menu.logado .links{
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+}
+
 .menu.logado a.link-logar,
 .menu.logado a.link-cadastro{
     display: none;
