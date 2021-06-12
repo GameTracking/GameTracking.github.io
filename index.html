@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-br">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--CSS nosso-->
+      <link rel="stylesheet" href="css/main.css">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+      <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+      <title>Game Tracking</title>
+   </head>
+   <body>
+      <!--Navbar-->
+      <header>
+         <nav class="menu">
+            <div class="logo">
+               <a href="">
+                  <img class="logo-gt" src="imgs/logo.png" alt="">
+               </a>
+            </div>
+
+            <div class="links">
+               <ul class="links-nav">
+                  <li class="a">
+                     <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="sobre.html">Sobre nós</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" id="sugestoes" href="sugestoes.html">Sugestões</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link link-cadastro" href="cadastrar.html">Cadastrar</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link link-logar" href="logar.html">Logar</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="nav-perfil">
+
+               <div class="items-perfil">
+                  <a href="perfil.html">
+                     <img src="imgs/user.png" alt="img-usuario">
+                  </a>
+                  <a href="perfil.html">Meu perfil</a>
+                  <i id="sair-menu" class="fas fa-sign-out-alt sair"></i>
+               </div>
+               
+            </div>
+
+         </nav>
+      </header>
+
+      <!--Fim do navbar-->
+      <div class="input-group my-3 pesquisa container">
+         <input id="busca" type="text" class="form-control" placeholder="Buscar">
+         <button class="btn" type="button" id="btn-busca"><i class="fas fa-search"></i></button>
+       </div>
+
+      <div class="container fix-footer ">
+         
+         <h2>Publicações</h2>
+         
+         <div class="jogo">
+            <img class="gratis-promocao" src="imgs/gratis.png">
+            <img class="img-jogo-home" src="https://mundodrix.com.br/site/wp-content/uploads/2020/07/Rocket-League.jpg" alt="" class="imgjogo">
+            <div class="infos">
+                  <h2 class="nome-jogo">Rocket League</h2>
+                  <h3>Rocket league ficou de graça no dia 23 de setembro...</h3>
+            <div class="data">
+               <p>12/11/20</p>
+               <a href="jogo.html" class="vermais">Ver mais</a>
+            </div>
+            </div>
+         </div>
+
+         <div class="jogo">
+            <img class="gratis-promocao" src="imgs/gratis.png">
+            <img class="img-jogo-home" src="https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-featured-image-16x9.jpg.adapt.crop191x100.1200w.jpg" alt="" class="img-jogo">
+            <div class="infos">
+               <h2 class="nome-jogo">Apex Legends</h2>
+               <h3>Apex Legends está disponível de graça para PlayStation®4, PlayStation®5...</h3>
+               <div class="data">
+                  <p>12/11/20</p>
+                  <a href="jogo1.html" class="vermais">Ver mais</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="jogo">
+            <img class="gratis-promocao" src="imgs/gratis.png">
+            <img class="img-jogo-home" src="https://cdn2.unrealengine.com/egs-thelionssong-mipumigames-g1a-02-1920x1080-a71da112b7a6.jpg" alt="" class="img-jogo">
+            <div class="infos">
+               <h2>The Lion's Song</h2>
+               <h3>A promoção termina 20/05/2021 às 12:00...</h3>
+               <div class="data">
+                  <p>12/11/20</p>
+                  <a href="jogo2.html" class="vermais">Ver mais</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="jogo">
+            <img class="gratis-promocao" src="imgs/promocao.png">
+            <img class="img-jogo-home" src="https://cdn-ext.fanatical.com/production/product/1280x720/821a8ef2-ae44-43ee-ba5f-893f0c408034.jpeg" alt="" class="img-jogo">
+            <div class="infos">
+               <h2>Shadow of War - Definitive Edition</h2>
+               <h3>80% de desconto na Versão Definitiva de Shadow of War, contendo...</h3>
+               <div class="data">
+                  <p>12/11/20</p>
+                  <a href="jogo3.html" class="vermais">Ver mais</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="jogo">
+            <img class="gratis-promocao" src="imgs/promocao.png">
+            <img class="img-jogo-home" src="https://assets.nuuvem.com/image/upload/t_banner_big/v1/products/557dbb4d69702d0a9cab8700/banners/rd166ojwrkegtxi8vkx8.jpg" alt="" class="img-jogo">
+            <div class="infos">
+               <h2>Euro Truck Simulator 2</h2>
+               <h3>75% de desconto no jogo base Euro Truck Simulator 2. Um jogo de...</h3>
+               <div class="data">
+                  <p>12/11/20</p>
+                  <a href="jogo4.html" class="vermais">Ver mais</a>
+               </div>
+            </div>
+         </div>
+
+
+      </div>
+
+      
+      <footer class="footer-gt">
+
+         <div class="logo-footer">
+
+            <img class="footer-img" src="imgs/logo.png" alt="">
+
+         </div>
+
+         <div class="mapa">
+            <h4>Mapa do site</h4>
+
+            <a href="index.html" class="link-mapa">Home</a>
+            <a href="sobre.html" class="link-mapa">Sobre nós</a>
+            <a href="sugestoes.html" class="link-mapa">Sugestões</a>
+         </div>
+
+
+         <div class="social">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-youtube-square"></i>
+         </div>
+
+      </footer>
+      
+      <script src="js/app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+   </body>
+</html>

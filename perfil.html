@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-br">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--CSS nosso-->
+      <link rel="stylesheet" href="css/main.css">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+      <link rel="stylesheet" href="main.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+      
+      <title>Game Tracking</title>
+   </head>
+   <body>
+     <!--Navbar-->
+     <header>
+      <nav class="menu">
+         <div class="logo">
+            <a href="">
+               <img class="logo-gt" src="imgs/logo.png" alt="">
+            </a>
+         </div>
+
+         <div class="links">
+            <ul class="links-nav">
+               <li class="a">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="sobre.html">Sobre nós</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="sugestoes" href="sugestoes.html">Sugestões</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link link-cadastro" href="cadastrar.html">Cadastrar</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link link-logar" href="logar.html">Logar</a>
+               </li>
+            </ul>
+         </div>
+
+         <div class="nav-perfil">
+
+            <div class="items-perfil">
+               <a href="perfil.html">
+                  <img src="imgs/user.png" alt="img-usuario">
+               </a>
+               <a href="perfil.html">Meu perfil</a>
+               <i id="sair-menu" class="fas fa-sign-out-alt sair"></i>
+            </div>
+            
+         </div>
+
+      </nav>
+   </header>
+
+   <!--Fim do navbar-->
+
+    <div class="div-perfil container">
+        <h2 class="h2-perfil">Perfil</h2>
+        <img id="img-perfil" src=imgs/user.png alt="Imagem do Perfil">
+        <h3 class="nome-usuario" >Seu Nome</h3>
+        <table>
+            <tr>
+               <th>Email:</th>
+               <td class="td-info"><span class="span-email">seuemail@email.com</span><input class="input-email" type="email" placeholder="Insira seu novo email"></td>
+               <td class="td-img"><img class="btn-edit-email btn-edit" src="imgs/lapis.com.png" alt="Editar e-mail">
+                  <button class="confirm-email btn-confirm">Confirmar</button>
+               </td>
+            </tr>
+            <tr>
+                <th>Gênero:</th>
+                <td class="td-info"><span class="span-genero">Masculino</span><select class="input-genero">
+                   <option value="Masculino">Masculino</option>
+                   <option value="Feminino">Feminino</option>
+                </select></td>
+                  <td class="td-img"><img class="btn-edit-genero btn-edit" src="imgs/lapis.com.png" alt="Editar gênero">
+                     <button class="confirm-genero btn-confirm">Confirmar</button>
+                  </td>
+            </tr>
+            <tr>
+                <th>Data de Nascimento:</th>
+                <td class="td-info"><span class="span-nascimento">05/08/1999</span><input class="input-nascimento" type="date"></td>
+                <td class="td-img"><img class="btn-edit-nascimento btn-edit" src="imgs/lapis.com.png" alt="Editar data de nascimento">
+                  <button class="confirm-nascimento btn-confirm">Confirmar</button>
+               </td>
+            </tr>
+        </table>
+        <div class="opcoes-perfil">
+         <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+            <label class="form-check-label" for="flexSwitchCheckChecked">Deseja receber notificações por e-mail?</label>
+         </div>
+         <div id="div-sair">
+            <input type="submit" value="Sair" id="sair" class="input-button">
+         </div>
+      </div>
+    </div>
+
+    <footer class="footer-gt footer-perfil">
+
+      <div class="logo-footer">
+
+         <img class="footer-img" src="imgs/logo.png" alt="">
+
+      </div>
+
+      <div class="mapa">
+         <h4>Mapa do site</h4>
+
+         <a href="index.html" class="link-mapa">Home</a>
+         <a href="sobre.html" class="link-mapa">Sobre nós</a>
+         <a href="sugestoes.html" class="link-mapa">Sugestões</a>
+      </div>
+
+
+      <div class="social">
+         <i class="fab fa-facebook-square"></i>
+         <i class="fab fa-twitter-square"></i>
+         <i class="fab fa-youtube-square"></i>
+      </div>
+
+   </footer>
+
+      <!-- Scripts -->
+      <script src="js/app.js"></script>
+      <script src="js/perfil.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+   </body>
+</html>
