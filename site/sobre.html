@@ -9,6 +9,8 @@
       <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
       <link rel="stylesheet" href="main.css">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+      
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
       <title>Game Tracking</title>
    </head>
@@ -17,18 +19,18 @@
       <header>
          <nav class="menu">
             <div class="logo">
-               <a href="index.html">
+               <a href="">
                   <img class="logo-gt" src="imgs/logo.png" alt="">
                </a>
             </div>
-            
+   
             <div class="links">
                <ul class="links-nav">
                   <li class="a">
                      <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link active" href="sobre.html">Sobre nós</a>
+                     <a class="nav-link" href="sobre.html">Sobre nós</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" id="sugestoes" href="sugestoes.html">Sugestões</a>
@@ -41,23 +43,22 @@
                   </li>
                </ul>
             </div>
-
-            
+   
             <div class="nav-perfil">
-
+   
                <div class="items-perfil">
                   <a href="perfil.html">
                      <img src="imgs/user.png" alt="img-usuario">
                   </a>
                   <a href="perfil.html">Meu perfil</a>
+                  <i id="sair-menu" class="fas fa-sign-out-alt sair"></i>
                </div>
                
             </div>
-
+   
          </nav>
       </header>
-
-
+   
       <!--Fim do navbar-->
 
       <div class="fix-footer">

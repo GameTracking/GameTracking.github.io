@@ -26,15 +26,15 @@
       <header>
          <nav class="menu">
             <div class="logo">
-               <a href="index.html">
-               <img class="logo-gt" src="imgs/logo.png" alt="">
+               <a href="">
+                  <img class="logo-gt" src="imgs/logo.png" alt="">
                </a>
             </div>
 
             <div class="links">
                <ul class="links-nav">
                   <li class="a">
-                     <a class="nav-link" href="index.html">Home</a>
+                     <a class="nav-link " href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="sobre.html">Sobre nós</a>
@@ -51,7 +51,6 @@
                </ul>
             </div>
 
-            
             <div class="nav-perfil">
 
                <div class="items-perfil">
@@ -59,13 +58,13 @@
                      <img src="imgs/user.png" alt="img-usuario">
                   </a>
                   <a href="perfil.html">Meu perfil</a>
+                  <i id="sair-menu" class="fas fa-sign-out-alt sair"></i>
                </div>
                
             </div>
 
          </nav>
       </header>
-
 
       <!--Fim do navbar-->
 
@@ -82,7 +81,7 @@
             <input type="text" id="email" name="email" maxlength="80" size="30" placeholder="Digite seu e-mail">
             <br>
             <label for="tel">Telefone (opcional):</label>
-            <input type="text" id="tel" name="tel" maxlength="15" placeholder="(11) 98888-7777">
+            <input type="text" placeholder="(11) 98888-7777" id="phone" name="phone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" />
             <br>
             <label id="msg" for="mensagem">Mensagem:</label>
             <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
